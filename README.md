@@ -29,4 +29,5 @@ npm install
 //压缩至 dist 文件夹中
 gulp build
 ```
-上线文件为`/dist`
+上线目录为`/dist`
+开发目录为`/app`
