@@ -1,0 +1,33 @@
+{
+  "name": "abchina-slider",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.5.6",
+    "gulp-util": "~2.2.20",
+    "gulp-concat": "~2.1.7",
+    "gulp-uglify": "~0.2.1",
+    "gulp-usemin": "~0.3.8",
+    "gulp-minify-css": "~0.2.0",
+    "gulp-minify-html": "~0.1.7",
+    "gulp-rev": "~0.2.1",
+    "gulp-coffee": "~1.4.3",
+    "gulp-stylus": "~0.0.13",
+    "gulp-watch": "~0.5.4",
+    "gulp-livereload": "~1.1.1",
+    "gulp-clean": "~0.2.4",
+    "gulp-shell": "~0.2.10",
+    "gulp-replace": "~0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@coding.net:williamlam/abchina-slider.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>房不胜房</title>
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+        <!-- <meta name="format-detection" content="telephone=no,email=no"> -->
+        <!-- build:css(app) styles/main.css -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="js/vendor/swipe/idangerous.swiper.css">
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!-- Music Audio 添加音乐链接即可 -->
+        <audio id="audio" src="" style="display: block;width: 0;height: 0;" controls preload="none"></audio>
+        <!-- <span class="play-paused"></span>
+        <span class="play-mask"></span> -->
+
+        <!-- Loading Spinner 改变加载蒙版颜色即可-->
+        <div class="table spiner-mask">
+            <div class="table-cell">
+                <div class="table-center">
+                    <div class="spinner">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Share Mask 分享蒙版-->
+        <div class="share-mask">
+            <div class="mask-wrap">
+                <img src="http://weazm-abc.qiniudn.com/abchina-slidershare.png" alt="" style="width: 100%;padding: 10%;">
+            </div>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--slider1-->
+                <div class="swiper-slide" style="width: 320px; height: 568px; background: url(../img/bg-1.jpg) no-repeat 50% 50%;background-size:cover;">
+                    <img src="../img/animate-1-1.jpg" height="179" width="640" alt="" class="animate-1-1">
+                    <img src="../img/animate-1-2.png" height="126" width="133" alt="" class="animate-1-2 pulse">
+                    <div class="arrow-up">
+                        <img src="http://weazm-minsheng.qiniudn.com/arrow.png" alt="">
+                    </div>
+                </div>
+
+                <!--slider2-->
+                <div class="swiper-slide" style="width: 320px; height: 568px; background: url(../img/bg-2.jpg) no-repeat 50% 50%;background-size:cover;">
+                    <img src="../img/animate-2-1.jpg" height="179" width="640" alt="" class="animate-2-1">
+                    <div class="snail">
+                        
+                    </div>
+                    <div class="arrow-up">
+                        <img src="http://weazm-minsheng.qiniudn.com/arrow.png" alt="">
+                    </div>
+                </div>
+
+                <!--slider3-->
+                <div class="swiper-slide" style="width: 320px; height: 568px; background: url(../img/bg-3.jpg) no-repeat 50% 50%;background-size:cover;">
+                    <img src="../img/animate-3-1.jpg" height="179" width="640" alt="" class="animate-3-1">
+                    <div class="arrow-up">
+                        <img src="http://weazm-minsheng.qiniudn.com/arrow.png" alt="">
+                    </div>
+                </div>
+
+                <!-- slider4 -->
+                <div class="swiper-slide" style="width: 320px; height: 568px; background: url(../img/bg-4.jpg) no-repeat 50% 50%;background-size:cover;">
+                    <img src="../img/animate-4-1.png" height="492" width="640" alt="" class="animate-4-1">
+                    <img src="../img/animate-4-2.png" height="256" width="196" alt="" class="animate-4-2">
+                    <img src="../img/animate-4-3.png" height="256" width="196" alt="" class="animate-4-3">
+                    <img src="../img/animate-4-4.png" height="408" width="604" alt="" class="animate-4-4">
+                    <img src="../img/animate-4-5.png" height="230" width="220" alt="" class="animate-4-5">
+                    <img src="../img/animate-4-6.jpg" height="292" width="640" alt="" class="animate-4-6">
+                    <div class="arrow-up">
+                        <img src="http://weazm-minsheng.qiniudn.com/arrow.png" alt="">
+                    </div>
+                </div>
+
+                <!-- slider5 -->
+                <div class="swiper-slide" style="width: 320px; height: 568px; background: url(../img/bg-5.jpg) no-repeat 50% 50%;background-size:cover;">
+                    <img src="../img/animate-5-1.jpg" height="282" width="640" alt="" class="animate-5-1">
+                    <img src="../img/animate-5-2.png" height="732" width="347" alt="" class="animate-5-2">
+                    <div class="arrow-up">
+                        <img src="http://weazm-minsheng.qiniudn.com/arrow.png" alt="">
+                    </div>
+                </div>
+
+                <!-- slider6 -->
+                <div class="swiper-slide" style="width: 320px; height: 568px; background: url(../img/bg-6.jpg) no-repeat 50% 50%;background-size:cover;">
+                    <form action="">
+                        <div class="clearfix">
+                            <div class="col-30">
+                                <span>姓名：</span>
+                            </div>
+                            <div class="col-70">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-30">
+                                <span>手机：</span>
+                            </div>
+                            <div class="col-70">
+                                <input type="tel">
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-30">
+                                <span>地址：</span>
+                            </div>
+                            <div class="col-70">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">
+                            <img src="../img/btn.png" height="85" width="185" alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- build:js(app) scripts/scripts.js -->
+        <script src="js/jquery.js"></script>
+        <script src="js/transit.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/vendor/swipe/idangerous.swiper.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/share.js"></script>
+        <!-- endbuild -->
+        <div style="display: none;">
+            <!--百度分享链接-->
+        </div>
+    </body>
+</html>
