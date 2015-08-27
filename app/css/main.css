@@ -201,6 +201,8 @@
 		height: 50px;
 		background: url(../../img/snail-1.png);
 		background-size: 100% 100%;
+		animation: changeBg 1s infinite;
+		-webkit-animation: changeBg 1.2s infinite;
 		position: absolute;
 		bottom: 2%;
 		left: 40%;
@@ -307,6 +309,17 @@
 		-o-transform: translateY(100px);
 		transform: translateY(100px);
 	}
+	.animate-5-3{
+		position: absolute;
+	    width: 100%;
+	    height: auto;
+	    top: 40%;
+	    opacity: 0;
+	    -webkit-transform: translateY(-100px);
+	    -ms-transform: translateY(-100px);
+	    -o-transform: translateY(-100px);
+	    transform: translateY(-100px);
+	}
 	form{
 		position: relative;
 		-webkit-box-sizing: border-box;
@@ -344,11 +357,11 @@
 	}
 	.form-info{
 		position: absolute;
-		width: 100%;
-		height: auto;
-		left: 0;
-		z-index: 1;
-		bottom: -50px;
+	    width: 120%;
+	    height: auto;
+	    left: -20px;
+	    z-index: 1;
+	    bottom: -50px;
 	}
 	input{
 		font-size: 16px;
@@ -443,6 +456,24 @@
 		animation: startUp 1.5s ease-in-out infinite;
 		-webkit-animation: startUp 1.5s ease-in-out infinite;
 	}
+	@-webkit-keyframes animateBg{
+		0% { background-position: 0 0; }
+		100% { background-position: -50px 0; }
+	}
+	@-webkit-keyframes changeBg{
+		0% { background-image: url(../../img/snail-1.png); }
+		50% { background-image: url(../../img/snail-2.png); }
+		100% { background-image: url(../../img/snail-1.png); }
+	}
+	@keyframes animateBg{
+		0% { background-position: 0 0; }
+		100% { background-position: -50px 0; }
+	}
+	@keyframes changeBg{
+		0% { background-image: url(../../img/snail-1.png); }
+		50% { background-image: url(../../img/snail-2.png); }
+		100% { background-image: url(../../img/snail-1.png); }
+	}
 	@-webkit-keyframes startUp {
 	  0%,30% {opacity: 0;-webkit-transform: translate(0, 5px); }
 	  60% {opacity: 1;-webkit-transform: translate(0, 0); }
@@ -451,3 +482,11 @@
 	   0%,30% {opacity: 0;-webkit-transform: translate(0, 5px); }
 	  60% {opacity: 1;-webkit-transform: translate(0, 0); }
 	  100% {opacity: 0;-webkit-transform: translate(0, -10px); } }
+	.logo{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 10;
+		width: 20%;
+		height: auto;
+	}

@@ -18,15 +18,15 @@
                 $('.animate-1-1').css({'y': '-100px','opacity': '0'});
                 $('.animate-3-1').css({'y': '-100px','opacity': '0'});
                 $('.snail').transition({
-                    x: -100,
+                    x: -120,
                     delay: 100,
-                    duration: 3000
-                }, function(){
-                    $('.animate-2-1').transition({
-                        opacity: 1,
-                        y: 0,
-                        duration: 400
-                    });
+                    duration: 10000
+                });
+                $('.animate-2-1').transition({
+                    opacity: 1,
+                    y: 0,
+                    delay: 300,
+                    duration: 400
                 });
             } else if (swiper.activeIndex == 2) {
                 $('.animate-2-1').css({'y': '-100px','opacity': '0'});
@@ -45,6 +45,7 @@
                 $('.animate-3-1').css({'y': '-100px','opacity': '0'});
                 $('.animate-5-1').css({'y': '-100px','opacity': '0'});
                 $('.animate-5-2').css({'y': '100px','opacity': '0'});
+                $('.animate-5-3').css({'y': '-100px','opacity': '0'});
                 $('.animate-4-2').transition({
                     rotate: 45,
                     duration: 600
@@ -77,16 +78,24 @@
                     delay: 300,
                     duration: 600
                 }, function(){
-                   $('.animate-5-1').transition({
+                   $('.animate-5-3').transition({
                        opacity: 1,
                        y: 0,
                        delay: 300,
                        duration: 600
+                   },function(){
+                        $('.animate-5-1').transition({
+                            opacity: 1,
+                            y: 0,
+                            delay: 300,
+                            duration: 600
+                        }); 
                    }); 
                 });
             } else if (swiper.activeIndex == 5) {
                 $('.animate-5-1').css({'y': '-100px','opacity': '0'});
                 $('.animate-5-2').css({'y': '100px','opacity': '0'});
+                $('.animate-5-3').css({'y': '-100px','opacity': '0'});
             }
         }
     });
